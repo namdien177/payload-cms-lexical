@@ -63,4 +63,13 @@ export default buildConfig({
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
   }),
+  i18n: {
+    lng: "vi",
+    fallbackLng: "vi", // default
+  },
+  localization: {
+    locales: ["en", "vi"],
+    defaultLocale: "vi",
+    fallback: true,
+  },
 });
